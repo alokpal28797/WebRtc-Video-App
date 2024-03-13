@@ -4,7 +4,7 @@ const io = new Server(8000, { cors: true });
 
 const emailToSocketIdMap = new Map();
 const SocketIdEmaiMap = new Map();
-// this is the socket connections
+
 io.on('connection', (socket) => {
     console.log("CONNECTED", socket.id)
 
